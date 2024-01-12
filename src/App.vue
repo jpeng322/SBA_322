@@ -1,9 +1,18 @@
 <script setup>
 import Header from "./components/Header.vue";
 import Button from "./components/Button.vue";
+
+const vHighlight = {
+  mounted(el) {
+    el.style.backgroundColor = "yellow";
+  },
+};
+
+
 </script>
 
 <template>
+
   <Header />
   <Button buttonName="This Button Alerts" color="red" />
   <div>
@@ -12,7 +21,7 @@ import Button from "./components/Button.vue";
   </div>
   <div class="spacer"></div>
   <p>Here is your message.</p>
-  <p class="message">{{ message }}</p>
+  <p  v-highlight>{{ message }}</p>
 </template>
 
 <script>
