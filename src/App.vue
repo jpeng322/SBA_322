@@ -1,5 +1,4 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
 import Header from "./components/Header.vue";
 import Button from "./components/Button.vue";
 </script>
@@ -8,15 +7,23 @@ import Button from "./components/Button.vue";
   <Header />
   <Button buttonName="This Button Alerts" color="red" />
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <h2>This input message will be displayed on the bottom of the page.</h2>
+    <input v-model="message" />
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <div class="spacer"></div>
+  <p>Here is your message.</p>
+  <p class="message">{{ message }}</p>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      message: "Type a message",
+    };
+  },
+};
+</script>
 
 <style scoped>
 .logo {
@@ -30,5 +37,15 @@ import Button from "./components/Button.vue";
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+
+.message {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: yellow;
+}
+
+.spacer {
+  height: 2000px;
 }
 </style>
