@@ -1,18 +1,32 @@
 <template>
   <header>
-    <h1>This is the header.</h1>
+    <h1>This is a simple header.</h1>
+    <h1
+      v-bind:class="{
+        italic: true,
+        isGreen: true,
+      }"
+    >
+      This is a italicized green header.
+    </h1>
   </header>
+
 </template>
 
 <script>
-// export default {
-//   name: Header,
-  
-// };
 </script>
 
 <style scoped>
 header {
-  border: 1px solid red;
+  border: 2px solid black;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  .italic {
+    font-style: italic;
+  }
+  .isGreen {
+    color: forestgreen;
+  }
 }
 </style>
