@@ -1,8 +1,5 @@
-# Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# SBA_322 Simple Angular Application
 
-## Recommended IDE Setup
+This skill based assessment tested my foundational knowledge of Vue. I was able to implement data binding, custom directories, and vue routing to create a simple bare-bone application. The user is able to interact with a simple interface and route to pages of different text.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-# SBA_322
